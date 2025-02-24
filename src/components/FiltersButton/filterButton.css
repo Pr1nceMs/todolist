@@ -1,0 +1,74 @@
+:root {
+    --primar: orangered;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.filters button {
+    position: relative;
+    overflow: hidden;
+    /* background-color: #ff4081; */
+    background-color: var(--primar);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.filters button:hover {
+    /* background-color: #f50057; */
+    background-color: rgb(224, 62, 3);
+    transform: translateY(-2px);
+}
+
+/* Shine effect */
+.filters button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(to right,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.3) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+    opacity: 0;
+}
+
+.filters button:hover::after {
+    opacity: 1;
+    left: 100%;
+}
+
+.filters button.active {
+    /* background-color: #f50057; */
+    background-color: rgb(200, 59, 8);
+}
+
+@media (max-width: 480px) {
+    .filters {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+}
+
+.filters button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+    opacity: 0.6;
+}

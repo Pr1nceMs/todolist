@@ -1,0 +1,43 @@
+:root {
+    --primary: orangered;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.input-group input[type='text'] {
+    flex: 1;
+    padding: 12px;
+    /* border: 2px solid #ff80ab; */
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input[type='text']:focus {
+    outline: none;
+    /* border-color: #ff4081; */
+    border-color: var(--primary);
+}
+
+.input-group button {
+    /* background-color: #ff4081; */
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.input-group button:hover {
+    /* background-color: #f50057; */
+    background-color: rgb(200, 59, 8);
+    transform: translateY(-2px);
+}

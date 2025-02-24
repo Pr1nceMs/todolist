@@ -1,0 +1,31 @@
+.search-bar {
+    position: relative;
+    margin-bottom: 20px;
+    border: none;
+}
+
+.search-bar input {
+    width: 90%;
+    padding: 12px;
+    padding-left: 35px;
+    /* border: 2px solid #ff80ab; */
+    border: 2px solid rgb(246, 79, 18);
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-bar input:focus {
+    outline: none;
+    /* border-color: #ff4081; */
+    border-color: orangered;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    /* color: #ff80ab; */
+    color: orangered;
+}
