@@ -21,6 +21,8 @@ conseillé avec token : git remote set-url origin https://Pr1nceMs:ghp_W1wAl5cRT
 deprecié : git remote add origin https://github.com/Pr1nceMs/nom_du_projet.git
 
 Pousse ton code sur GitHub :
+verifier si nous sommes dans la branche principale main et non master
 git branch -M main
+envoyer le code sur github maintenant
 git push -u origin main
 
