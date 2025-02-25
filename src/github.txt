@@ -1,0 +1,26 @@
+ 1. Initialiser Git dans ton projet
+git init
+
+2. Ajouter un fichier .gitignore
+git add .gitignore
+git commit -m "Ajout du fichier .gitignore"
+
+3.Ajouter les fichiers du projet à Git
+git add .
+
+Valide les fichiers avec un commit :
+git commit -m "Premier commit - Initialisation du projet nom du projet"
+
+4. Créer un dépôt sur GitHub et lier ton projet
+Va sur GitHub et crée un nouveau dépôt.
+Copie l’URL du dépôt GitHub.
+Ajoute ce dépôt comme remote dans ton projet :
+
+conseillé avec token : git remote set-url origin https://Pr1nceMs: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@github.com/Pr1nceMs/nom_du_projet.git
+
+deprecié : git remote add origin https://github.com/Pr1nceMs/nom_du_projet.git
+
+Pousse ton code sur GitHub :
+git branch -M main
+git push -u origin main
+
