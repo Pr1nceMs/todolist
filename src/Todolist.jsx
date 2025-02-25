@@ -15,8 +15,6 @@ const Todolist = () => {
         { id: 1, text: 'Acheter du lait', completed: false },
         { id: 2, text: 'Faire a manger', completed: false },
         { id: 3, text: 'Se reposer', completed: false }
-
-
     ]);
     const [searchTerm, setSearchTerm] = useState("");
     const [nextId, setNextId] = useState(1);
